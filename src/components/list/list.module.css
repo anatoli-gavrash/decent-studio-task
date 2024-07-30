@@ -1,3 +1,9 @@
+.title {
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
 .link {
   display: flex;
   align-items: center;
@@ -16,11 +22,22 @@
   object-fit: contain;
 }
 
-.title {
+.countryTitle {
   color: var(--color-black);
 }
 
+@media (max-width: 900px) {
+  .title {
+    margin-left: unset;
+    text-align: center;
+  }
+}
+
 @media (max-width: 500px) {
+  .title {
+    font-size: 26px;
+  }
+
   .link {
     flex-direction: column;
   }
@@ -30,7 +47,7 @@
     height: 120px;
   }
 
-  .title {
+  .countryTitle {
     flex-shrink: 1;
   }
 }
