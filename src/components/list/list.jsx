@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import {Container, Grid} from '@mui/material';
 import {Link} from 'react-router-dom';
-import {fetchData} from '../../utils';
+import {fetchData, stringToCharCode} from '../../utils';
 import styles from './list.module.css';
 
 const List = () => {
@@ -20,7 +20,7 @@ const List = () => {
       <Grid justifyContent={'center'} className={styles.grid} container spacing={2}>
         {countries && countries.map((country) => {
           return (
-            <Grid className={styles.item} item xs={12} sm={10} md={6} lg={4}>
+            <Grid className={styles.item} item xs={12} sm={10} md={6} lg={4} key={stringToCharCode(country.name.common)}>
               <Link className={styles.link} to={`/${country.name.common.toLowerCase()}`}>
                 <img className={styles.flag} src={country.flags.png} alt={country.flags.alt || ''} />
                 <h3 className={styles.countryTitle}>{country.name.common}</h3>
