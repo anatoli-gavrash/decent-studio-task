@@ -1,2 +1,9 @@
-# decent-studio-task
-Technical task for Decent Studio company
+# Simple Countries list for Decent Studio company
+
+- Deploy - https://decent-studio-task.netlify.app/
+
+## Used technologies
+React
+react-router-dom
+Material UI
+Vite
