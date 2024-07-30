@@ -1,0 +1,16 @@
+:root {
+  --color-white: rgb(230, 230, 230);
+  --color-black: rgb(55, 55, 55);
+  --color-black50: rgba(55, 55, 55, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-white);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
