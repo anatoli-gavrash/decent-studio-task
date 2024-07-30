@@ -1,0 +1,28 @@
+.text {
+  font-size: 84px;
+  font-weight: 900;
+}
+
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-black);
+  transition: transform 0.1s;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-black);
+  transition: width 0.2s;
+}
+
+.link:hover::after {
+  width: 0%;
+}
