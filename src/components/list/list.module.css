@@ -9,9 +9,15 @@
   align-items: center;
   gap: 10px 15px;
   padding: 5px;
-  border: 2px solid var(--color-black);
+  border: 2px solid var(--color-black50);
   border-radius: 5px;
   text-decoration: none;
+  box-shadow: 0 0 0;
+  transition: box-shadow 0.2s;
+}
+
+.link:hover {
+  box-shadow: 0px 0px 7px var(--color-black50);
 }
 
 .flag {
