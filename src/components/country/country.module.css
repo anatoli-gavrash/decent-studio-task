@@ -1,0 +1,28 @@
+.country {
+  border: 2px solid var(--color-black);
+  border-radius: 10px;
+}
+
+.flag {
+  width:40%;
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.details span {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+@media (max-width: 900px) {
+  .country {
+    flex-wrap: wrap;
+  }
+
+  .flag {
+    width: 100%;
+  }
+}
