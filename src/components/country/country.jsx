@@ -2,8 +2,8 @@ import {useEffect, useState} from 'react';
 import {Box} from '@mui/material';
 import {useParams} from 'react-router-dom';
 import {fetchData} from '../../utils';
-import styles from './country.module.css';
 import Error404 from '../error404/error404';
+import styles from './country.module.css';
 
 const Country = () => {
   const [error, setError] = useState(null);
